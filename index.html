@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluca Hair Center | VIP E-Commerce Mockup</title>
+    <!-- Fuentes de Lujo -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP BAR DE ANUNCIOS -->
+    <div class="top-bar">
+        <p>✨ RESALTA TU BELLEZA CON NOSOTROS • ENVÍOS EXPRESS A TODO EL PAÍS 🇩🇴 ✨</p>
+    </div>
+
+    <!-- NAVBAR CORPORATIVA CON LOGO COMPLETO Y CARRITO -->
+    <header class="navbar">
+        <div class="logo">Peluca Hair Center<span>.</span></div>
+        <div class="nav-right">
+            <div class="nav-status"><i class="fas fa-store"></i> 5 Sucursales</div>
+            <!-- ICONO DE CARRITO COMPRAS -->
+            <div class="cart-icon-wrapper" id="open-cart">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-badge">2</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO PRINCIPAL ELITE -->
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-tag">Salón de Belleza & Alta Costura en Pelucas</span>
+            <h1>Tu belleza, nuestra pasión.</h1>
+            <p>Explora colecciones exclusivas de pelucas de fibra natural y agenda tus servicios de salón o uñas con confirmación automatizada en cualquiera de nuestras sucursales.</p>
+            <div class="hero-actions">
+                <a href="#servicios" class="btn-gold"><i class="fas fa-scissors"></i> Ver Servicios</a>
+                <a href="#ecommerce" class="btn-outline"><i class="fas fa-shopping-bag"></i> Tienda de Pelucas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN VISUAL DE SERVICIOS -->
+    <section id="servicios" class="services-section">
+        <div class="section-title">
+            <h2>Especialidades del Salón</h2>
+            <p>Resultados profesionales con personal calificado en nuestras áreas de estilismo, uñas y estética.</p>
+        </div>
+
+        <div class="services-visual-grid">
+            <!-- Servicio 1: Uñas (ID ULTRA ESTABLE CORREGIDO) -->
+            <div class="service-display-card">
+                <div class="service-img-box">
+                    <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=600&q=80" alt="Nails Studio">
+                </div>
+                <div class="service-display-info">
+                    <h3>Nails Studio</h3>
+                    <p>Manicura, pedicura, sistemas en acrílico, acrigel, ruber y efectos especiales de tendencia.</p>
+                    <span class="price-from">Desde RD$ 100</span>
+                </div>
+            </div>
+
+            <!-- Servicio 2: Trenzas y Extensiones -->
+            <div class="service-display-card">
+                <div class="service-img-box">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Extensiones">
+                </div>
+                <div class="service-display-info">
+                    <h3>Extensiones & Trenzas</h3>
+                    <p>Especialistas en postura cosida, costura a máquina por paquetes y fibra de alta calidad.</p>
+                    <span class="price-from">Desde $300</span>
+                </div>
+            </div>
+
+            <!-- Servicio 3: Lavado y Estilismo -->
+            <div class="service-display-card">
+                <div class="service-img-box">
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=80" alt="Estilismo">
+                </div>
+                <div class="service-display-info">
+                    <h3>Estilismo & Rizos</h3>
+                    <p>Lavados directos, rolos, secados premium y definición especializada para cabellos rizados.</p>
+                    <span class="price-from">Desde $200</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AGENDADOR AUTOMATIZADO INTEGRADO -->
+    <section class="booking-section">
+        <div class="booking-card">
+            <div class="booking-card-header">
+                <h3><i class="far fa-clock"></i> Reserva tu Cita en Segundos</h3>
+                <p>Selecciona los parámetros y el sistema enviará tu solicitud limpia al WhatsApp central.</p>
+            </div>
+            
+            <div class="form-group">
+                <label><i class="fas fa-map-marker-alt"></i> 1. Elige la Sucursal:</label>
+                <select id="sucursal-select">
+                    <option value="Plaza Central (1er y 3er Nivel)">Plaza Central (1er y 3er Nivel)</option>
+                    <option value="Coral Mall (1er Nivel, San Isidro)">Coral Mall (1er Nivel, San Isidro)</option>
+                    <option value="Bella Vista (Nueva Sede)">Bella Vista (Nueva Sede)</option>
+                    <option value="Naco (Nueva Sede)">Naco (Nueva Sede)</option>
+                    <option value="Santiago (Nueva Sede)">Santiago (Nueva Sede)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label><i class="fas fa-th-list"></i> 2. Tipo de Servicio:</label>
+                <select id="servicio-select">
+                    <option value="Manicura (RD$100)">💅 Manicura Studio — RD$ 100</option>
+                    <option value="Pedicura (RD$300)">🦶 Pedicura Spa — RD$ 300</option>
+                    <option value="Pintura en Gel (RD$150)">✨ Pintura en Gel — RD$ 150</option>
+                    <option value="Acrílico Normal ($300)">💎 Acrílico Normal — $300</option>
+                    <option value="Acrigel ($600)">🔮 Sistema Acrigel — $600</option>
+                    <option value="Lavado y Secado Rolo ($350)">💇‍♀️ Lavado, Secado & Rolo — $350</option>
+                    <option value="Definición de Rizos ($1,000)">🌀 Definición de Rizos (Corto) — $1,000</option>
+                    <option value="Postura por Paquete de Trenzas ($300)">🧵 Postura de Trenzas — $300</option>
+                </select>
+            </div>
+
+            <button id="btn-reservar" class="btn-booking-action">
+                <i class="fab fa-whatsapp"></i> Confirmar Fecha por WhatsApp
+            </button>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO E-COMMERCE (4 Pelucas Completas con Links de Alta Disponibilidad) -->
+    <section id="ecommerce" class="shop-section">
+        <div class="section-title">
+            <h2>Tienda de Pelucas Premium</h2>
+            <p>Selecciona tu referencia exclusiva y procésala a través del carrito de compras virtual.</p>
+        </div>
+
+        <div class="products-grid">
+            <!-- Peluca 1 -->
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Peluca Larga">
+                    <span class="badge">100% Natural</span>
+                </div>
+                <div class="product-info">
+                    <h3>Lace Front Velvet Silk 24"</h3>
+                    <p class="price">$250 <span>USD</span></p>
+                    <p class="desc">Densidad del 180%, malla HD invisible de oreja a oreja. Admite decoloración completa.</p>
+                    <button class="btn-add-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Peluca 2 -->
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80" alt="Peluca Bob">
+                    <span class="badge">Top Ventas</span>
+                </div>
+                <div class="product-info">
+                    <h3>Bob Cut Ombré Gold 12"</h3>
+                    <p class="price">$185 <span>USD</span></p>
+                    <p class="desc">Corte simétrico de precisión con degradado oro metálico profundo. Postura inmediata.</p>
+                    <button class="btn-add-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Peluca 3 (ID REDISEÑADO CON AFRO/RIZOS DE ALTA DISPONIBILIDAD CORREGIDO) -->
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=600&q=80" alt="Peluca Rizada">
+                    <span class="badge">Efecto HD</span>
+                </div>
+                <div class="product-info">
+                    <h3>Afro Curly Deep Wave 18"</h3>
+                    <p class="price">$210 <span>USD</span></p>
+                    <p class="desc">Rizo definido de alta retención de humedad. Línea de nacimiento pre-plucked ultra realista.</p>
+                    <button class="btn-add-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Peluca 4 -->
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=600&q=80" alt="Peluca Lacia">
+                    <span class="badge">Lujo Exclusivo</span>
+                </div>
+                <div class="product-info">
+                    <h3>Straight Obsidian Sleek 30"</h3>
+                    <p class="price">$295 <span>USD</span></p>
+                    <p class="desc">Largo imponente con caída liso espejo perfecto y puntas totalmente llenas y saludables.</p>
+                    <button class="btn-add-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🛒 PANEL LATERAL DEL CARRITO DE COMPRAS -->
+    <div class="cart-drawer-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-drawer-header">
+            <h3>Bolsa de Compras (2)</h3>
+            <button id="close-cart" class="btn-close-cart"><i class="fas fa-times"></i></button>
+        </div>
+
+        <div class="cart-drawer-items">
+            <!-- Item 1 -->
+            <div class="cart-item">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Peluca Larga">
+                <div class="cart-item-info">
+                    <h4>Lace Front Velvet Silk 24"</h4>
+                    <p class="cart-item-meta">Fibra: Natural | Cantidad: 1</p>
+                    <span class="cart-item-price">$250.00 USD</span>
+                </div>
+                <button class="btn-remove-item"><i class="far fa-trash-alt"></i></button>
+            </div>
+            <!-- Item 2 -->
+            <div class="cart-item">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Peluca Bob">
+                <div class="cart-item-info">
+                    <h4>Bob Cut Ombré Gold 12"</h4>
+                    <p class="cart-item-meta">Estilo: Bob Cut | Cantidad: 1</p>
+                    <span class="cart-item-price">$185.00 USD</span>
+                </div>
+                <button class="btn-remove-item"><i class="far fa-trash-alt"></i></button>
+            </div>
+        </div>
+
+        <div class="cart-drawer-footer">
+            <div class="cart-subtotal">
+                <span>Subtotal:</span>
+                <strong>$435.00 USD</strong>
+            </div>
+            <div class="payment-methods-logos">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <span class="secure-tag"><i class="fas fa-lock"></i> Conexión SSL</span>
+            </div>
+            <button class="btn-checkout" onclick="alert('⚡ Simulación de Pasarela: Aquí la clienta ingresa los datos de su tarjeta de crédito/débito y procesa los $435.00 USD en tiempo real mediante Stripe o Azul sin salir de la web.')">
+                Proceder al Pago Seguro
+            </button>
+        </div>
+    </div>
+
+    <!-- COBRANZA Y POLÍTICAS -->
+    <footer class="footer">
+        <p class="footer-brand">PELUCA HAIR CENTER</p>
+        <p class="footer-policy">Métodos de facturación local: Transferencia bancaria o Efectivo | Envíos Express asegurados</p>
+        <div class="divider"></div>
+        <p class="credits">&copy; 2026 Peluca Hair Center. Proyecto desarrollado y diseñado por Impulso Clic.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
